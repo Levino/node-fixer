@@ -1,0 +1,33 @@
+{
+  "name": "fixer.io",
+  "version": "0.0.1",
+  "description": "A library to convert currencies using the fixer.io API",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Levino/node-fixer.git"
+  },
+  "keywords": [
+    "exchange-rates",
+    "exchange",
+    "forex",
+    "fixer.io"
+  ],
+  "author": "Levin Keller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Levino/node-fixer/issues"
+  },
+  "homepage": "https://github.com/Levino/node-fixer",
+  "dependencies": {
+    "chai": "^3.2.0",
+    "moment": "^2.10.6",
+    "request": "^2.61.0"
+  }
+}
