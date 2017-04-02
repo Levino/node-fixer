@@ -17,9 +17,9 @@ describe('Basic Tests', function () {
 
 describe('Heavy load', function () {
   this.timeout(30000)
-  it('should convert 1 Dollar 1000 times to Euro', function (done) {
+  it('should convert 1 Dollar 100 times to Euro', function (done) {
     var fixer = new Fixer()
-    async.times(1000, function (n, callback) {
+    async.times(100, function (n, callback) {
       var date = faker.date.between('2011-03-12', '2015-03-12')
       console.log(date)
       fixer.convert('USD', 'EUR', date, 1, callback)
@@ -29,9 +29,9 @@ describe('Heavy load', function () {
 
 describe('Test cache', function () {
   this.timeout(30000)
-  it('should convert 1 Dollar 1000 times to Euro', function (done) {
+  it('should convert 1 Dollar 100 times to Euro', function (done) {
     var fixer = new Fixer({cacheDir: path.join(__dirname, '/../cache')})
-    async.times(1000, function (n, callback) {
+    async.times(100, function (n, callback) {
       var date = faker.date.between('2011-03-12', '2015-03-12')
       console.log(date)
       fixer.convert('USD', 'EUR', date, 1, callback)
