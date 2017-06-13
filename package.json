@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Levino/node-fixer",
   "dependencies": {
+    "bottleneck": "^1.15.1",
     "cached-request": "^1.1.1",
     "chai": "^3.2.0",
     "moment": "^2.10.6",

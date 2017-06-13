@@ -21,7 +21,6 @@ describe('Heavy load', function () {
     var fixer = new Fixer()
     async.times(100, function (n, callback) {
       var date = faker.date.between('2011-03-12', '2015-03-12')
-      console.log(date)
       fixer.convert('USD', 'EUR', date, 1, callback)
     }, done)
   })
@@ -33,7 +32,6 @@ describe('Test cache', function () {
     var fixer = new Fixer({cacheDir: path.join(__dirname, '/../cache')})
     async.times(100, function (n, callback) {
       var date = faker.date.between('2011-03-12', '2015-03-12')
-      console.log(date)
       fixer.convert('USD', 'EUR', date, 1, callback)
     }, done)
   })
